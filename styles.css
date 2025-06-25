@@ -222,23 +222,13 @@ body {
     align-items: center;
 }
 
-.hero-placeholder {
-    width: 500px;
+.hero-img {
+    width: 100%;
+    max-width: 500px;
     height: 400px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    object-fit: cover;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px dashed #dee2e6;
-    color: #6c757d;
-}
-
-.hero-placeholder i {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: #e67e22;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Styles */
@@ -268,6 +258,24 @@ section {
 /* About Section */
 .about {
     background: #f8f9fa;
+}
+
+.about-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-grid {
@@ -386,23 +394,12 @@ section {
     margin-bottom: 2rem;
 }
 
-.adoption-placeholder {
+.adoption-img {
     width: 100%;
     height: 400px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    object-fit: cover;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px dashed #dee2e6;
-    color: #6c757d;
-}
-
-.adoption-placeholder i {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: #e67e22;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Donation Section */
@@ -456,6 +453,15 @@ section {
 .donation-card p {
     color: #7f8c8d;
     line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.donation-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .donation-cta {
@@ -489,45 +495,7 @@ section {
     flex-wrap: wrap;
 }
 
-/* Gallery Section */
-.gallery {
-    background: white;
-}
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.gallery-item {
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: scale(1.03);
-}
-
-.gallery-placeholder {
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed #dee2e6;
-    color: #6c757d;
-}
-
-.gallery-placeholder i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #e67e22;
-}
 
 /* Contact Section */
 .contact {
@@ -777,7 +745,7 @@ section {
     }
 
     .hero-image,
-    .hero-placeholder {
+    .hero-img {
         width: 100%;
         max-width: 400px;
         height: 300px;
@@ -831,9 +799,13 @@ section {
     }
 
     .about-grid,
-    .donation-grid,
-    .gallery-grid {
+    .donation-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .about-images {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .section-title {

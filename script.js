@@ -260,7 +260,7 @@ function initializeAnimations() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.about-card, .benefit-item, .donation-card, .gallery-item, .contact-item');
+    const animateElements = document.querySelectorAll('.about-card, .benefit-item, .donation-card, .contact-item');
     animateElements.forEach(element => {
         observer.observe(element);
     });
@@ -320,13 +320,7 @@ function addSkipLink() {
 
 // Enhance keyboard navigation
 function enhanceKeyboardNavigation() {
-    // Make gallery items focusable
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    galleryItems.forEach((item, index) => {
-        item.setAttribute('tabindex', '0');
-        item.setAttribute('role', 'img');
-        item.setAttribute('aria-label', `Imagem da galeria ${index + 1}`);
-    });
+    // Gallery items no longer exist, removed this code
     
     // Improve button accessibility
     const buttons = document.querySelectorAll('.btn');
