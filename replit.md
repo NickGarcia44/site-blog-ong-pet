@@ -89,6 +89,10 @@ The website is structured with the following main sections:
 ```
 Changelog:
 - June 25, 2025. Initial setup
+- June 25, 2025. Updated color scheme to modern blue and purple gradients
+- June 25, 2025. Created new dog logo with blue/purple theme
+- June 25, 2025. Replaced gallery section with user's actual dog images
+- June 25, 2025. Applied modern gradient backgrounds throughout site
 ```
 
 ## User Preferences

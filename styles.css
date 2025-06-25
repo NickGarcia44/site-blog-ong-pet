@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #1e293b;
+    background-color: #f8fafc;
 }
 
 /* Accessibility */
@@ -30,7 +30,7 @@ body {
 
 /* Focus styles for accessibility */
 *:focus {
-    outline: 2px solid #e67e22;
+    outline: 2px solid #667eea;
     outline-offset: 2px;
 }
 
@@ -56,24 +56,24 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #e67e22, #d35400);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #d35400, #c0392b);
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: #667eea;
+    border: 2px solid #667eea;
 }
 
 .btn-secondary:hover {
-    background: #e67e22;
+    background: #667eea;
     color: white;
     transform: translateY(-2px);
 }
@@ -129,7 +129,10 @@ body {
 .logo-text {
     font-size: 24px;
     font-weight: 600;
-    color: #e67e22;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-menu {
@@ -147,7 +150,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #e67e22;
+    color: #667eea;
 }
 
 .nav-link::after {
@@ -157,7 +160,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #e67e22;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     transition: width 0.3s ease;
 }
 
@@ -185,7 +188,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 120px 20px 60px;
-    background: linear-gradient(135deg, #fff5f0 0%, #ffe8d6 100%);
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #f8fafc 100%);
 }
 
 .hero-content {
@@ -197,14 +200,17 @@ body {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #2c3e50;
+    background: linear-gradient(135deg, #1e293b, #475569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: #7f8c8d;
+    color: #64748b;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -244,20 +250,23 @@ section {
 .section-title {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #2c3e50;
+    background: linear-gradient(135deg, #1e293b, #475569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 1rem;
 }
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: #7f8c8d;
+    color: #64748b;
     max-width: 600px;
     margin: 0 auto;
 }
 
 /* About Section */
 .about {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
 .about-images {
@@ -301,7 +310,7 @@ section {
 .about-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #e67e22, #d35400);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -317,12 +326,12 @@ section {
 .about-card h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 1rem;
 }
 
 .about-card p {
-    color: #7f8c8d;
+    color: #64748b;
     line-height: 1.6;
 }
 
@@ -338,12 +347,7 @@ section {
     align-items: center;
 }
 
-.adoption-text h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 2rem;
-}
+
 
 .adoption-benefits {
     margin-bottom: 3rem;
@@ -358,7 +362,7 @@ section {
 
 .benefit-item i {
     font-size: 1.5rem;
-    color: #e67e22;
+    color: #667eea;
     margin-top: 0.2rem;
     flex-shrink: 0;
 }
@@ -366,17 +370,17 @@ section {
 .benefit-item h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 0.5rem;
 }
 
 .benefit-item p {
-    color: #7f8c8d;
+    color: #64748b;
     line-height: 1.6;
 }
 
 .adoption-cta {
-    background: linear-gradient(135deg, #fff5f0, #ffe8d6);
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -385,12 +389,12 @@ section {
 .adoption-cta h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 1rem;
 }
 
 .adoption-cta p {
-    color: #7f8c8d;
+    color: #64748b;
     margin-bottom: 2rem;
 }
 
@@ -404,7 +408,7 @@ section {
 
 /* Donation Section */
 .donation {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
 .donation-grid {
@@ -430,7 +434,7 @@ section {
 .donation-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -446,12 +450,12 @@ section {
 .donation-card h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 1rem;
 }
 
 .donation-card p {
-    color: #7f8c8d;
+    color: #64748b;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -475,13 +479,13 @@ section {
 .donation-cta h3 {
     font-size: 2rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 1rem;
 }
 
 .donation-cta p {
     font-size: 1.1rem;
-    color: #7f8c8d;
+    color: #64748b;
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
@@ -499,7 +503,7 @@ section {
 
 /* Contact Section */
 .contact {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
 .contact-content {
@@ -527,7 +531,7 @@ section {
 .contact-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #e67e22, #d35400);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -543,12 +547,12 @@ section {
 .contact-details h3 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 0.5rem;
 }
 
 .contact-details p {
-    color: #7f8c8d;
+    color: #64748b;
     line-height: 1.6;
 }
 
@@ -575,7 +579,7 @@ section {
 .contact-form h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -587,7 +591,7 @@ section {
 .form-group label {
     display: block;
     font-weight: 500;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 0.5rem;
 }
 
@@ -606,7 +610,7 @@ section {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #e67e22;
+    border-color: #667eea;
     outline: none;
 }
 
@@ -649,7 +653,7 @@ section {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #e67e22;
+    color: #667eea;
 }
 
 .footer-links {
@@ -667,7 +671,7 @@ section {
 }
 
 .footer-links a:hover {
-    color: #e67e22;
+    color: #667eea;
 }
 
 .footer-contact p {
@@ -679,7 +683,7 @@ section {
 }
 
 .footer-contact i {
-    color: #e67e22;
+    color: #667eea;
     width: 20px;
 }
 
@@ -812,9 +816,18 @@ section {
         font-size: 1.8rem;
     }
 
+.adoption-text h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
     .adoption-text h2 {
         font-size: 1.8rem;
     }
+}
 }
 
 /* Animation Classes */
