@@ -1,41 +1,48 @@
 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="60" height="60" rx="12" fill="#1a1a1a"/>
-  
-  <!-- Paw print -->
-  <g transform="translate(30, 30)">
-    <!-- Main pad -->
-    <ellipse cx="0" cy="3" rx="6" ry="8" fill="#c084fc"/>
-    
-    <!-- Top left toe -->
-    <ellipse cx="-8" cy="-8" rx="3.5" ry="5" fill="#c084fc" transform="rotate(-15 -8 -8)"/>
-    
-    <!-- Top right toe -->
-    <ellipse cx="8" cy="-8" rx="3.5" ry="5" fill="#c084fc" transform="rotate(15 8 -8)"/>
-    
-    <!-- Left toe -->
-    <ellipse cx="-10" cy="-2" rx="3" ry="4.5" fill="#c084fc" transform="rotate(-25 -10 -2)"/>
-    
-    <!-- Right toe -->
-    <ellipse cx="10" cy="-2" rx="3" ry="4.5" fill="#c084fc" transform="rotate(25 10 -2)"/>
-    
-    <!-- Inner shadow for depth -->
-    <ellipse cx="0" cy="3" rx="4" ry="6" fill="#a855f7" opacity="0.3"/>
-  </g>
-  
-  <!-- Subtle glow effect -->
   <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge> 
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dogGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c084fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
   </defs>
   
-  <!-- Apply glow to the paw -->
-  <g filter="url(#glow)" opacity="0.8">
-    <use href="#paw"/>
+  <!-- Background -->
+  <rect width="60" height="60" rx="12" fill="url(#bgGradient)"/>
+  
+  <!-- Dog face -->
+  <g transform="translate(30, 30)">
+    <!-- Head -->
+    <ellipse cx="0" cy="0" rx="16" ry="14" fill="white"/>
+    
+    <!-- Ears -->
+    <ellipse cx="-12" cy="-8" rx="4" ry="8" fill="url(#dogGradient)" transform="rotate(-30 -12 -8)"/>
+    <ellipse cx="12" cy="-8" rx="4" ry="8" fill="url(#dogGradient)" transform="rotate(30 12 -8)"/>
+    
+    <!-- Inner ears -->
+    <ellipse cx="-11" cy="-6" rx="2" ry="5" fill="#f8fafc" transform="rotate(-30 -11 -6)"/>
+    <ellipse cx="11" cy="-6" rx="2" ry="5" fill="#f8fafc" transform="rotate(30 11 -6)"/>
+    
+    <!-- Eyes -->
+    <circle cx="-5" cy="-3" r="2" fill="#1e293b"/>
+    <circle cx="5" cy="-3" r="2" fill="#1e293b"/>
+    <circle cx="-4.5" cy="-3.5" r="0.7" fill="white"/>
+    <circle cx="5.5" cy="-3.5" r="0.7" fill="white"/>
+    
+    <!-- Nose -->
+    <ellipse cx="0" cy="2" rx="2" ry="1.5" fill="#1e293b"/>
+    
+    <!-- Mouth -->
+    <path d="M0 4 Q-3 6 -6 5 M0 4 Q3 6 6 5" stroke="#1e293b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Tongue -->
+    <ellipse cx="0" cy="7" rx="1.5" ry="3" fill="#f472b6"/>
+    
+    <!-- Spots -->
+    <circle cx="-8" cy="-2" r="1.5" fill="url(#dogGradient)" opacity="0.4"/>
+    <circle cx="8" cy="1" r="2" fill="url(#dogGradient)" opacity="0.4"/>
   </g>
 </svg>
