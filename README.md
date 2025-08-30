@@ -1,4 +1,4 @@
-Dog Rescue and Adoption Website
+## Dog Rescue and Adoption Website
 
 ## Overview
 
