@@ -1,8 +1,8 @@
-# Instituto Sandra - Dog Rescue and Adoption Website
+Dog Rescue and Adoption Website
 
 ## Overview
 
-Instituto Sandra is a static website for a dog rescue and adoption NGO (Non-Governmental Organization) in Brazil. The website serves as an informational platform to showcase the organization's mission, facilitate dog adoptions, accept donations, and provide contact information. The site is built using vanilla HTML, CSS, and JavaScript with a focus on accessibility and responsive design.
+Static website for a dog rescue and adoption NGO (Non-Governmental Organization). The website serves as an informational platform to showcase the organization's mission, facilitate dog adoptions, accept donations, and provide contact information. The site is built using vanilla HTML, CSS, and JavaScript with a focus on accessibility and responsive design.
 
 ## System Architecture
 
@@ -84,22 +84,8 @@ The website is structured with the following main sections:
 - **Form Processing**: Backend service for contact form submissions
 - **Database**: Future pet management system integration
 
-## Changelog
-
-```
-Changelog:
-- June 25, 2025. Initial setup
-- June 25, 2025. Updated color scheme to modern blue and purple gradients
-- June 25, 2025. Created new dog logo with blue/purple theme
-- June 25, 2025. Replaced gallery section with user's actual dog images
-- June 25, 2025. Applied modern gradient backgrounds throughout site
-```
-
 ## User Preferences
 
-```
-Preferred communication style: Simple, everyday language.
-```
 
 ## Development Notes
 
