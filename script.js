@@ -312,8 +312,7 @@ function addSkipLink() {
     
     // Add main landmark
     const heroSection = document.getElementById('home');
-    if (heroSection) {
-        heroSection.setAttribute('id', 'main');
+    if (heroSection) {;
         heroSection.setAttribute('role', 'main');
     }
 }
